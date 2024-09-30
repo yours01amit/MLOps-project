@@ -1,0 +1,18 @@
+pandas
+scikit-learn
+numpy
+seaborn
+flask
+mlflow
+dvc
+
+
+# dev requirements - 
+
+pytest
+tox
+black
+flake8
+mypy
+
+-e . 
