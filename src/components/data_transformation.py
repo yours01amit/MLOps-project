@@ -56,7 +56,7 @@ class DataTransformation:
             cat_pipeline=Pipeline(
                 steps=[
                 ('imputer',SimpleImputer(strategy='most_frequent')),
-                ('ordinalencoder',OrdinalEncoder(categories=[cut_categories,color_categories,clarity_categories])),
+                ('ordinalencoder',OrdinalEncoder(categories=[cut_categories, color_categories, clarity_categories], handle_unknown='use_encoded_value', unknown_value=-1)),
                 ('scaler',StandardScaler())
                 ]
 
